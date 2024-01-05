@@ -18,7 +18,6 @@ https://joshrthedeveloper.github.io/Code-quiz/
 
 #### Screenshot
 ![my screenshot](assets/ArtboardCodeQuiz.png).
-![my screenshot](assets/joshrthedeveloper.github.io_Code-quiz_.png).
 
 
 ## Credits
