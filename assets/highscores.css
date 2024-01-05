@@ -1,15 +1,46 @@
 /* highscores.css */
 
+section {
+ margin: 0 auto auto auto;
+}
+
+a {
+ text-decoration: none;
+ background-color: red;
+ color: white;
+ padding: 0;
+ margin: 0;
+ border: none;
+ cursor: pointer;
+}
+
+P {
+ padding: 0;
+}
+
+body {
+ width: 100%;
+}
+
+main {
+ width: 40%;
+ margin: auto;
+}
+
+h1 {
+ width: 40%;
+ margin-top: 10%;
+ margin-bottom: 10px;
+ text-align: left;
+}
+
+/* modifies the container/section that displays the scores */
 #highscores {
  background-color: silver;
  padding: 20px;
  margin-bottom: 20px;
  width: 100%;
  text-align: left;
-}
-
-section {
- margin: 0 auto auto auto;
 }
 
 .highscore-list {
@@ -45,7 +76,6 @@ section {
  cursor: pointer;
 }
 
-
 #clear-highscores:hover {
  background-color: rgb(131, 6, 6);
  color: white;
@@ -69,44 +99,4 @@ color: white;
   border: none;
   cursor: pointer;
  }
-
-a {
- text-decoration: none;
- background-color: red;
- color: white;
- padding: 0;
- margin: 0;
- border: none;
- cursor: pointer;
- 
-}
-
-P {
- padding: 0;
-}
-
-body {
- width: 100%;
-}
-
-main {
- width: 40%;
- margin: auto;
-}
-
-h1 {
- width: 40%;
- margin-top: 10%;
- margin-bottom: 10px;
- text-align: left;
-}
-
-/* Add these styles to your highscores.css file or wherever you define your styles */
-.score-number {
- margin-right: 5px;
-}
-
-.score-dash {
- margin: 0 5px;
-}
 

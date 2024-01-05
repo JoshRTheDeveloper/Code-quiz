@@ -4,13 +4,13 @@
 function displayHighScores() {
  var highScoresContainer = document.querySelector("#highscores");
 
- // Retrieve high scores from storage
+// declares getting scores from storage
  var highscores = getHighscoresFromStorage();
 
 
  highScoresContainer.innerHTML = "";
 
-
+// formating of the entries and display
  highscores.forEach(function (entry, index) {
    var entryLi = document.createElement("div");
    entryLi.classList.add("highscore-entry");
@@ -41,7 +41,7 @@ function displayHighScores() {
  });
 }
 
-
+// adds new scores by pushing
 function saveHighscore(initials, score) {
  
  var highscores = getHighscoresFromStorage();
@@ -58,7 +58,7 @@ function saveHighscore(initials, score) {
  localStorage.setItem("highscores", JSON.stringify(highscores));
 }
 
-
+// gets scores from storage
 function getHighscoresFromStorage() {
  
  var highscoresString = localStorage.getItem("highscores");
@@ -66,7 +66,7 @@ function getHighscoresFromStorage() {
  return highscores;
 }
 
-
+// clears scores - and bonus of double checking
 var clearHighscoresButton = document.getElementById("clear-highscores");
 clearHighscoresButton.addEventListener("click", function () {
  
