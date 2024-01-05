@@ -30,6 +30,7 @@ section {
  text-align: center;
  width: 40%;
  margin: 10% auto auto auto;
+ min-width: 300px;
  }
 
 
