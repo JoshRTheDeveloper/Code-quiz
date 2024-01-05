@@ -1,0 +1,112 @@
+/* highscores.css */
+
+#highscores {
+ background-color: silver;
+ padding: 20px;
+ margin-bottom: 20px;
+ width: 100%;
+ text-align: left;
+}
+
+section {
+ margin: 0 auto auto auto;
+}
+
+.highscore-list {
+ list-style-type: none;
+ padding: 0;
+}
+
+.highscore-entry {
+ display: flex;
+ align-items: center;
+ margin-bottom: 10px;
+}
+
+.score-number {
+ font-weight: bold;
+ margin-right: 5px;
+}
+
+.score-dash {
+ margin: 0 5px;
+}
+
+.buttons {
+ text-align: center;
+ margin-top: 20px;
+}
+
+#clear-highscores {
+ background-color: red;
+ color: white;
+ padding: 5px 20px;
+ border: none;
+ cursor: pointer;
+}
+
+
+#clear-highscores:hover {
+ background-color: rgb(131, 6, 6);
+ color: white;
+ padding: 5px 20px;
+ border: none;
+ cursor: pointer;
+}
+
+#go-back {
+background-color: rgb(204, 145, 36);
+color: white;
+ padding: 5px 20px;
+ border: none;
+ cursor: pointer;
+}
+
+#go-back:hover {
+ background-color: rgb(106, 75, 19);
+ color: white;
+  padding: 5px 20px;
+  border: none;
+  cursor: pointer;
+ }
+
+a {
+ text-decoration: none;
+ background-color: red;
+ color: white;
+ padding: 0;
+ margin: 0;
+ border: none;
+ cursor: pointer;
+ 
+}
+
+P {
+ padding: 0;
+}
+
+body {
+ width: 100%;
+}
+
+main {
+ width: 40%;
+ margin: auto;
+}
+
+h1 {
+ width: 40%;
+ margin-top: 10%;
+ margin-bottom: 10px;
+ text-align: left;
+}
+
+/* Add these styles to your highscores.css file or wherever you define your styles */
+.score-number {
+ margin-right: 5px;
+}
+
+.score-dash {
+ margin: 0 5px;
+}
+
