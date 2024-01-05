@@ -41,6 +41,8 @@ h1 {
 
 /* modifies the container/section that displays the scores */
 #highscores {
+ display: flex;
+ flex-direction: column;
  background-color: silver;
  padding: 20px;
  margin-bottom: 20px;
