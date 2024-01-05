@@ -1,7 +1,10 @@
 /* highscores.css */
 
 section {
- margin: 0 auto auto auto;
+ display: flex;
+ margin: auto auto auto auto;
+ min-width: 100px;
+
 }
 
 a {
@@ -27,6 +30,8 @@ main {
  margin: auto;
 }
 
+
+
 h1 {
  width: 40%;
  margin-top: 10%;
@@ -39,8 +44,8 @@ h1 {
  background-color: silver;
  padding: 20px;
  margin-bottom: 20px;
- width: 100%;
  text-align: left;
+
 }
 
 .highscore-list {
@@ -99,5 +104,6 @@ color: white;
   padding: 5px 20px;
   border: none;
   cursor: pointer;
+  
  }
 
