@@ -32,19 +32,22 @@ section {
  margin: 10% auto auto auto;
  }
 
+
 .content {
  margin: 30px auto 30px auto;
  width: 60%;
 }
 
-
+/* timer */
 #countdown {
  color: black;
 }
 
+/* scores link - top left */
 #viewScores{
  padding: 20px;
 }
+
 
 #viewScores:hover {
  padding: 10px;

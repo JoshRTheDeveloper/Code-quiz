@@ -1,6 +1,6 @@
 document.querySelector("#start").addEventListener("click", startQuiz);
 
-
+// questions array
 var questions = [
   {
     question: "Commonly used data types DO not include:",
@@ -9,13 +9,23 @@ var questions = [
   },
   {
     question: "The condition in an if / else statement is enclosed with ______.",
-    choices: ["quotes", "boocurly brackets", "parenthesis", "square brackets"],
+    choices: ["quotes", "curly brackets", "parenthesis", "square brackets"],
     correctAnswer: "parenthesis"
   },
   {
-    question: "Commonly used data types DO not include:",
-    choices: ["stringgs", "booleans", "alerts", "numbers"],
-    correctAnswer: "boolgeans"
+    question: "Arrays in JasaScript can be used to store _________",
+    choices: ["numbers and strings", "other arrays", "booleans", "all of the above"],
+    correctAnswer: "all of the above"
+  },
+  {
+    question: "String values must be enclosed within ________ when being assigned to variables",
+    choices: ["commas", "curly brackets", "quotes", "parenthesis"],
+    correctAnswer: "curly brackets"
+  },
+  {
+    question: "A very useful tool used during development and debugging for printing content to the debugger is:",
+    choices: ["JavaScript", "terminal/bash", "for loops", "console.log"],
+    correctAnswer: "for loops"
   }
 
 ];
@@ -24,6 +34,7 @@ var currentQuestionIndex = 0;
 var timeleft = 60; 
 var Timer;
 
+// timer will start
 function startQuiz() {
   
   document.getElementById("countdown").innerHTML = "Time: " + timeleft;
@@ -45,11 +56,13 @@ function startQuiz() {
   displayQuestion();
 }
 
+// message will be created
 var message = document.createElement("p");
 message.id = "feedback-message";
 message.style.fontSize = "25px";
 message.style.textAlign = "left";
 
+// displays question by by sorting through questions array
 function displayQuestion() {
   var container = document.querySelector("#quiz");
   container.innerHTML = ""; 
@@ -81,6 +94,7 @@ function displayQuestion() {
   container.appendChild(message);
 }
 
+// style and display/create buttons
 function createButton(textContent) {
   var button = document.createElement("button");
   button.textContent = textContent;
@@ -92,6 +106,7 @@ function createButton(textContent) {
   return button;
 }
 
+// displays message if answer is wrong or right
 function checkAnswer(selected) {
   var message = document.getElementById("feedback-message");
 
@@ -102,7 +117,7 @@ function checkAnswer(selected) {
     message.textContent = "Wrong!";
   }
 
-  // Proceed to the next question after a delay
+  // Proceed to the next question after answer
   setTimeout(function () {
     currentQuestionIndex++;
 
@@ -115,25 +130,27 @@ function checkAnswer(selected) {
       document.getElementById("countdown").innerHTML = "All Done";
       endQuiz();
     }
-  }, 0); // Adjust the delay as needed
+  }, 0); // Adjust delay if wanted
 }
 
 function endQuiz() {
-  // Clear the quiz container
+  // Clear the quiz
   var container = document.querySelector("#quiz");
   container.innerHTML = "";
 
-  // Display the "All Done" heading with the final score
+  // Display all done 
   var allDoneHeading = document.createElement("h1");
   allDoneHeading.innerHTML = "All Done!";
   allDoneHeading.style.textAlign = "left";
   container.appendChild(allDoneHeading);
 
+ // display final score
   var finalScore = document.createElement("p");
   finalScore.innerHTML = "Your final score is: " + timeleft;
   finalScore.style.textAlign = "left";
   container.appendChild(finalScore);
 
+  // input form is created
   var initialsForm = document.createElement("form");
   var initialsInput = document.createElement("input");
   var btn = document.createElement("button");
@@ -142,11 +159,13 @@ function endQuiz() {
   initialsInput.placeholder = "Enter Initials";
 
   btn.textContent = "Submit";
+
+  // listens for click
   btn.addEventListener("click", function () {
-    // Handle the submission of initials and score
+    // saves score
     saveHighscore(initialsInput.value, timeleft);
     alert("Initials submitted: " + initialsInput.value);
-    // Redirect to highscores.html
+    // go to the highscores page
     window.location.href = "highscores.html";
   });
 
@@ -157,10 +176,10 @@ function endQuiz() {
 }
 
 function saveHighscore(initials, score) {
-  // Retrieve existing highscores from storage
+  // Retrieve scores from storage
   var highscores = getHighscoresFromStorage();
 
-  // Add the new highscore
+  // Adds the new highscore
   highscores.push({ initials: initials, score: score });
 
   // Save the updated highscores back to storage
@@ -168,7 +187,7 @@ function saveHighscore(initials, score) {
 }
 
 function getHighscoresFromStorage() {
-  // Retrieve highscores from local storage or any other storage mechanism
+  // Retrieve scores from local storage
   var highscoresString = localStorage.getItem("highscores");
   var highscores = highscoresString ? JSON.parse(highscoresString) : [];
   return highscores;
