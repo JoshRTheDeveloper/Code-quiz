@@ -14,9 +14,10 @@ A quiz to test knowledge and speed of knowledge.
 
 
 ## Deployment
-
+https://joshrthedeveloper.github.io/Code-quiz/
 
 #### Screenshot
+![my screenshot](assets/ArtboardCodeQuiz.png).
 
 
 ## Credits
