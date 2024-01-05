@@ -12,11 +12,6 @@ h1 {
  font-weight: 900;
 }
 
-.content {
- margin: 30px auto 30px auto;
- width: 60%;
-}
-
 button {
  border: none;
  background-color: purple;
@@ -30,12 +25,31 @@ button {
 button:hover {
  cursor: pointer;
 }
+
+section {
+ text-align: center;
+ width: 40%;
+ margin: 10% auto auto auto;
+ }
+
+.content {
+ margin: 30px auto 30px auto;
+ width: 60%;
+}
+
+
 #countdown {
  color: black;
 }
 
-section {
-text-align: center;
-width: 40%;
-margin: 10% auto auto auto;
+#viewScores{
+ padding: 20px;
 }
+
+#viewScores:hover {
+ padding: 10px;
+ margin: 10px;
+ background-color: rgb(42, 69, 165);
+ color: aliceblue;
+}
+

@@ -1,37 +1,36 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Code Quiz</title>
- <link rel="stylesheet" href="./assets/reset.css"/>
- <link rel="stylesheet" href="./assets/style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Quiz</title>
+  <link rel="stylesheet" href="./assets/reset.css"/>
+  <link rel="stylesheet" href="./assets/style.css"/>
 </head>
 <body>
 
- <header>
-  <a href="">
-   <p>View Highscores</p>
-  </a>
-  <p id="countdown"></p>
- </header>
+  <header>
+    <a href="" id="viewScores">
+      <p>View Highscores</p>
+    </a>
+    <p id="countdown"></p>
+  </header>
 
- <main>
+  <main>
+    <section id="quiz">
+      <h1>Coding Quiz Challenge</h1>
+      <p class="content">
+        Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+      </p>
+      <button type="button" id="start">
+        Start Quiz
+      </button>
+    </section>
+  </main>
 
-  <section id="quiz">
-   <h1>Coding Quiz Challenge</h1>
-   <p class="content">
-    Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers wil penalize your score/time by ten seconds!
-   </p>
-   <button type="button"  id="start">
-    Start Quiz
-   </button>
-  </section>
- 
- </main>
- 
- <script src="./assets/script.js"></script>
-
+  <script src="./assets/script.js"></script>
 
 </body>
 </html>
