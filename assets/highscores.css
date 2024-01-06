@@ -51,8 +51,10 @@ h1 {
 }
 
 .highscore-list {
+
  list-style-type: none;
  padding: 0;
+
 }
 
 .highscore-entry {
