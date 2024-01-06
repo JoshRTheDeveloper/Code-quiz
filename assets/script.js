@@ -192,3 +192,5 @@ function getHighscoresFromStorage() {
   var highscores = highscoresString ? JSON.parse(highscoresString) : [];
   return highscores;
 }
+
+
